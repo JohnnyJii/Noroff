@@ -1,5 +1,5 @@
 package main.userInteraction;
-/*import main.fileManipulation.File;*/
+import main.fileManipulation.File;
 import java.util.Scanner;
 
 public class Menu {
@@ -36,7 +36,7 @@ boolean quit;
     private int getInput() {
         Scanner sc = new Scanner(System.in);
         int choice = -1;
-        while (choice <= 0 || choice > 3) {
+        while (choice < 0 || choice >= 3) {
             try {
                 System.out.print("\n" + "Please enter selection: ");
                 choice = Integer.parseInt(sc.nextLine());
@@ -48,10 +48,10 @@ boolean quit;
         return choice;
     }
 
-    /*private void toFileMenu() {
-        File file = new File();
+    private void toFileMenu() {
+        File file = new File(null);
         file.runFileMenu();
-    }*/
+    }
 
     private void performAction(int choice) {
         switch(choice) {
@@ -60,7 +60,7 @@ boolean quit;
                 System.out.println("Bye bye!!!");
                 break;
             case 1:
-                /*toFileMenu();*/
+                toFileMenu();
                 break;
             case 2:
                 /*modifyFile();*/

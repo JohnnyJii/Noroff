@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class File {
     boolean quitFile;
 
-    public void runFileMenu() {
+    public File(String string) {
+	}
+
+	public void runFileMenu() {
         printFileMenuHeader();
         while (!quitFile) {
             printFileMenu();
@@ -41,11 +44,13 @@ public class File {
     } 
     return fileChoice;
     }
+    
 
     private void performFileAction(int fileChoice) {
         switch(fileChoice) {
             case 0:
                 quitFile = true;
+                System.out.println("Tahnk you!");
                 Menu menu = new Menu();
                 menu.runMenu();
                 break;
