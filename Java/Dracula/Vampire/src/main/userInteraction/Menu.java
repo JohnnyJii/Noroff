@@ -1,9 +1,10 @@
 package main.userInteraction;
+
 import main.fileManipulation.File;
 import java.util.Scanner;
 
 public class Menu {
-boolean quit;
+    boolean quit;
 
 
     public void runMenu() {
@@ -29,7 +30,6 @@ boolean quit;
         System.out.println("\n" + "Make a selection: ");
         System.out.println("1) File menu");
         System.out.println("2) Good to know");
-        System.out.println("3) Lose all hope");
         System.out.println("0) Quit");
     }
 
@@ -63,11 +63,6 @@ boolean quit;
                 toFileMenu();
                 break;
             case 2:
-                /*modifyFile();*/
-                break;
-            case 3:
-                /*nervousBreakDown();*/
-                System.out.println("Calling asylym...");
                 break;
             default:
                 System.out.println("404 system not found!"); 

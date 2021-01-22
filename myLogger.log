@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2021-01-21T16:56:03.415495900Z</date>
-  <millis>1611248163415</millis>
-  <nanos>495900</nanos>
+  <date>2021-01-22T09:06:35.141590300Z</date>
+  <millis>1611306395141</millis>
+  <nanos>590300</nanos>
   <sequence>1</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>My test log</message>
 </record>
 <record>
-  <date>2021-01-21T16:56:03.423490500Z</date>
-  <millis>1611248163423</millis>
-  <nanos>490500</nanos>
+  <date>2021-01-22T09:06:35.150589700Z</date>
+  <millis>1611306395150</millis>
+  <nanos>589700</nanos>
   <sequence>2</sequence>
   <logger>global</logger>
   <level>FINE</level>
@@ -26,9 +26,9 @@
   <message>My second log</message>
 </record>
 <record>
-  <date>2021-01-21T16:56:03.432505Z</date>
-  <millis>1611248163432</millis>
-  <nanos>505000</nanos>
+  <date>2021-01-22T09:06:35.151587800Z</date>
+  <millis>1611306395151</millis>
+  <nanos>587800</nanos>
   <sequence>3</sequence>
   <logger>global</logger>
   <level>SEVERE</level>
@@ -41,7 +41,7 @@
     <frame>
       <class>App</class>
       <method>main</method>
-      <line>38</line>
+      <line>37</line>
     </frame>
   </exception>
 </record>

@@ -1,30 +1,27 @@
 package main.fileManipulation;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 
 public class FileService {
-    File story = new File("Dracula.txt");
-    File meme1 = new File("Meme_1.jpeg");
-    File meme2 = new File("Meme_2.png");
-    File meme3 = new File("Meme_3.jpg");
-    File meme4 = new File("Meme_4.jpg");
-    File meme5 = new File("Meme_5.jpg");
-    File meme6 = new File("Meme_6.jpeg");
-    File meme7 = new File("Meme_7.jpeg");
-    File meme8 = new File("Meme_8.jfif");
-    File meme9 = new File("Meme_9.jfif");
-    File meme10 = new File("Meme_10.jfif");
-    File meme11 = new File("Meme_11.jfif");
+   
+    private void fileCheck() {
 
-public void fileCheck() throws FileNotFoundException {
-    File story = new File("Dracule.txt");
-    Scanner fileReader = new Scanner((Readable) story);
-    while (fileReader.hasNextLine()) {
-        String data = fileReader.nextLine();
-        System.out.println(data);
+       try {
+           File myObj = new File("Java/Dracula/Vampire/src/main/recourses/Dracula.txt");
+           Scanner myReader = new Scanner(myObj);
+
+           while(myReader.hasNextLine()) {
+               String data = myReader.nextLine();
+               System.out.println(data);
+           }
+           myReader.close();
+       } catch (FileNotFoundException e) {
+           System.out.println("error occurred");
+           e.printStackTrace();
+       }
+
     }
-    fileReader.close();
-}
 }
