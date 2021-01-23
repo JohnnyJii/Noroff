@@ -14,6 +14,8 @@ public class InfoLogger {
         try {
         FileHandler fh = new FileHandler("myLog.log");
         logger.addHandler(fh);
+        logger.setLevel(Level.INFO);
+        
 
         SimpleFormatter formatter = new SimpleFormatter();
         fh.setFormatter(formatter);

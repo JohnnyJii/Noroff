@@ -1,6 +1,6 @@
 package main.userInteraction;
 
-import main.fileManipulation.File;
+import main.fileManipulation.FileMenu;
 import java.util.Scanner;
 
 public class Menu {
@@ -49,7 +49,7 @@ public class Menu {
     }
 
     private void toFileMenu() {
-        File file = new File(null);
+        FileMenu file = new FileMenu(null);
         file.runFileMenu();
     }
 
@@ -63,6 +63,7 @@ public class Menu {
                 toFileMenu();
                 break;
             case 2:
+                /*modifyFile();*/
                 break;
             default:
                 System.out.println("404 system not found!"); 

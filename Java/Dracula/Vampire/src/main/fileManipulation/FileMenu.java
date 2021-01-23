@@ -1,12 +1,15 @@
 package main.fileManipulation;
 
+import main.fileReader.ReadMyFile;
 import main.userInteraction.*;
+
+import java.io.File;
 import java.util.Scanner;
 
-public class File {
+public class FileMenu {
     boolean quitFile;
 
-    public File(String string) {
+    public FileMenu(String string) {
     }
     
 	public void runFileMenu() {
@@ -18,7 +21,9 @@ public class File {
         }
     }
 
-  private void printFileMenuHeader() {
+
+
+    private void printFileMenuHeader() {
         System.out.println("******************************");
         System.out.println("           Filemenu           ");
         System.out.println("                              ");
@@ -55,9 +60,9 @@ public class File {
     return fileChoice;
     }
 
-    private void fileCheck() {
-        File file = new File(null);
-        file.fileCheck();
+    private void fileReader(String demoFileString) {
+        ReadMyFile file = new ReadMyFile();
+        file.fileReader(new File("Java/Dracula/Vampire/src/main/resourses/" + demoFileString));
     }
     
 
@@ -70,9 +75,10 @@ public class File {
                 menu.runMenu();
                 break;
             case 1:
-            fileCheck();
+            fileReader("Dracula.txt");
                 break;
             case 2:
+            fileReader("Meme_1.jpeg");
                 break;
             case 3:
                 break;
