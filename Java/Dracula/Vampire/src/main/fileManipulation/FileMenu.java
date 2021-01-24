@@ -106,6 +106,7 @@ public class FileMenu {
                 break;
             case 12:
                 fileReader("Meme_11.jfif");
+                break;
             default:
                 System.out.println("404 system not found!");
         }

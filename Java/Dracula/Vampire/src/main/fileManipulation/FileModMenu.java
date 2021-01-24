@@ -1,5 +1,6 @@
 package main.fileManipulation;
 
+import main.fileReader.WriteMyFile;
 import java.io.File;
 import java.util.Scanner;
 import main.userInteraction.*;
@@ -56,6 +57,11 @@ public class FileModMenu {
         } 
         return fileModChoice;
         }   
+
+    private void fileWriter(String demoFileWriter) {
+        WriteMyFile file = new WriteMyFile();
+        file.fileWriter(new File("Java/Dracula/Vampires/src/main/resources" + demoFileWriter));
+    }
     
         private void performModFileAction(int fileModChoice) {
             switch(fileModChoice) {
@@ -66,29 +72,41 @@ public class FileModMenu {
                     menu.runMenu();
                     break;
                 case 1:
+                    fileWriter("Dracula.txt");
                     break;
                 case 2:
+                    fileWriter("Meme_1.jpeg");
                     break;
                 case 3:
+                    fileWriter("Meme_2.png");
                     break;
                 case 4:
+                    fileWriter("Meme_3.jpg");
                     break;
                 case 5:
+                    fileWriter("Meme_4.jpg");
                     break;
                 case 6:
+                    fileWriter("Meme_5.jpg");
                     break;
                 case 7:
+                    fileWriter("Meme_6.jpg");
                     break;
                 case 8:
+                    fileWriter("Meme_7.jpg");
                     break;
                 case 9:
+                    fileWriter("Meme_8.jfif");
                     break;
                 case 10:
+                    fileWriter("Meme_9.jfif");
                     break;
                 case 11:
+                    fileWriter("Meme_10.jfif");
                     break;
                 case 12:
-                default:
+                    fileWriter("Meme_11.jfif");
+                    break;                default:
                     System.out.println("404 system not found!");
             }
     }
