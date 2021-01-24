@@ -51,16 +51,16 @@ public class Menu {
         return choice;
     }
 
-/*     private void toFileMenu() {
-        FileMenu file = new FileMenu(null);
-        file.runFileMenu();
-    }
- */
     private void toFileMenu() {
         FileMenu file = new FileMenu(null);
         file.runFileMenu();
     }
 
+    private void toModFileMenu() {
+        FileMenu file = new FileMenu(null);
+        file.runFileModMenu();
+    }
+ 
     private void performAction(int choice) {
         switch(choice) {
             case 0:
@@ -68,10 +68,10 @@ public class Menu {
                 System.out.println("Bye bye!!!");
                 break;
             case 1:
-                // toFileMenu();
+                toFileMenu();
                 break;
             case 2:
-                toFileMenu();
+                toModFileMenu();
                 break;
             default:
                 System.out.println("404 system not found!"); 
