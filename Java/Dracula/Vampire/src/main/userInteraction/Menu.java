@@ -62,10 +62,6 @@ public class Menu {
         file.runFileMenu();
     }
 
-    private void toModFileMenu() {
-        FileMenu file = new FileMenu(null);
-        file.runFileModMenu();
-    }
 
     private void listFiles() {
         File directoryPath = new File("Java/Dracula/Vampire/src/main/resourses/");
@@ -184,7 +180,6 @@ public class Menu {
                 toFileMenu();
                 break;
             case 2:
-                toModFileMenu();
                 break;
             case 3:
                 listFiles();
