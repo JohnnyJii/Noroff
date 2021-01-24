@@ -1,6 +1,9 @@
 package main.userInteraction;
 
 import main.fileManipulation.FileMenu;
+import main.fileManipulation.FileModMenu;
+
+import java.io.File;
 import java.util.Scanner;
 
 public class Menu {
@@ -28,8 +31,8 @@ public class Menu {
 
     private void printMenu() {
         System.out.println("\n" + "Make a selection: ");
-        System.out.println("1) File menu");
-        System.out.println("2) Good to know");
+        System.out.println("1) Read file");
+        System.out.println("2) Modify file");
         System.out.println("0) Quit");
     }
 
@@ -48,6 +51,11 @@ public class Menu {
         return choice;
     }
 
+/*     private void toFileMenu() {
+        FileMenu file = new FileMenu(null);
+        file.runFileMenu();
+    }
+ */
     private void toFileMenu() {
         FileMenu file = new FileMenu(null);
         file.runFileMenu();
@@ -60,10 +68,10 @@ public class Menu {
                 System.out.println("Bye bye!!!");
                 break;
             case 1:
-                toFileMenu();
+                // toFileMenu();
                 break;
             case 2:
-                /*modifyFile();*/
+                toFileMenu();
                 break;
             default:
                 System.out.println("404 system not found!"); 
